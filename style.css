@@ -135,28 +135,53 @@ body{
 .container{
   display: flex;
   gap: 30px;
+  margin-top: 40px;
+  justify-content: space-between;
 }
  .course-column{
   background-color: #fff3f3;
   border-radius: 10px;
   padding: 28px 24px;
+  flex: 1;
+  transition: all 0.5s ease;
+  cursor: pointer;
 }
+
+.course-column:hover{
+  box-shadow: 0 10px 20px rgb(0, 0, 0, 0.15);
+  transform: translate(-10px);
+}
+
+.course-column h3{
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.course-column p{
+  font-size: 14px;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 16px;
+}
+
+
 
 /* styling section ends */
 
 
-/* styling campus begins  */
+ /* styling campus begins
 .campus-image{
   justify-content: center;
   display: flex;
   align-items: center;
   position: relative;
   gap: 20px;
-  /* width: 80px;
-  height: 80px; */
+  width: 80px;
+  height: 80px;
 
 }
 
-/* .container-image{
+ .container-image{
   display: flex;
 } */
