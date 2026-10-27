@@ -1,0 +1,162 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(Poppins/Poppins-Light.ttf);
+}
+
+body{
+  color: #222;
+  font-family: poppins;
+}
+
+/* Styling header begins  */
+.hero{
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+  url('Images/banner.jpg');
+
+  width: 100%;
+
+  min-height: 800px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+.header-nav ul{
+  display: flex;
+  gap: 36px; 
+  list-style: none;
+  align-items: center;
+}
+
+.header-nav a{
+  position: relative;
+  text-decoration: none;
+  color:white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.logo img{
+  width: 150px;
+  height: auto
+}
+
+.header-nav a::before {
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 0;
+  height: 1.6px;
+  bottom: -5px;
+  left: 0;
+  transition: all 0.7s ease;
+}
+
+.header-nav a:hover::before{
+  width: 100%;
+
+}
+
+.text-box{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+  gap: 20px;
+  text-align: center;
+}
+
+.primary-header{
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.primary-paragraph{
+  font-size: 16px;
+}
+
+.btn{
+  text-decoration: none;
+  color: white;
+  border: 2px, solid, white;
+  padding: 16px 30px;
+  cursor: pointer;
+  transition: all 0.6s ease;
+  font-size: 16px;
+}
+
+.btn:hover{
+  background-color: red;
+  border: red;
+}
+
+/* styling header ends  */
+
+/* styling section begins */
+.section{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  text-transform: capitalize;
+  max-width: 1200px;
+  padding-top: 70px;
+}
+
+.section-header{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.section-paragraph{
+  font-size: 16px;
+  font-weight: 300;
+  color: #777;
+}
+
+.container{
+  display: flex;
+  gap: 30px;
+}
+ .course-column{
+  background-color: #fff3f3;
+  border-radius: 10px;
+  padding: 28px 24px;
+}
+
+/* styling section ends */
+
+
+/* styling campus begins  */
+.campus-image{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+  /* width: 80px;
+  height: 80px; */
+
+}
+
+/* .container-image{
+  display: flex;
+} */
